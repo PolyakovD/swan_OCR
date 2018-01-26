@@ -1,2 +1,4 @@
 ## Directory-based project format:
 .idea/*
+## Ignore result.csv
+main/*.csv
