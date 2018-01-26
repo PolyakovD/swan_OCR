@@ -155,7 +155,7 @@ def make_table(image_dir):
 
     :return:
     """
-    table_data = collect_data(my_image_dir)
+    table_data = collect_data(image_dir)
     while True and table_data:
         try:
             with open(image_dir + "\\result.csv", "w", newline='') as result_file:
@@ -169,6 +169,6 @@ def make_table(image_dir):
                   "console to rewrite result.csv")
             input()
 
-my_image_dir = r"C:\\Users\\Acer\\Desktop\\Asya\\test\\second"
 
-make_table(my_image_dir)
+image_sample_dir = os.getcwd().rpartition("\\")[0]
+make_table(image_sample_dir)
